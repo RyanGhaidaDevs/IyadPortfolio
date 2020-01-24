@@ -1,18 +1,8 @@
 .grid-container {
   display: grid;
-  grid-template-areas:
-  "sidebar item item item item item item sidebar"
-  "sidebar item item item item item item sidebar"
-  "sidebar item item item item item item sidebar"; 
   grid-template-columns: 10% auto auto auto auto auto auto 10%;
   grid-row-gap: 80px;
-  grid-column-gap: 80px;
 
-
-}
-
-header {
-  grid-area: header;
 }
 
 .grid-item {
@@ -24,12 +14,12 @@ header {
 }
 
 .grid-sidebar {
-  grid-column-start: 1;
+  grid-column: 2 / 8;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 30px;
+  padding: 1px;
 }
 
 #main {
-  height: 2000px
+  height: 2000px;
 } 
