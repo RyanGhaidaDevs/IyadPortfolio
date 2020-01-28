@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import background from './background2.jpg';
+import background from './background-1-28-2020.jpg';
 import GridContainer from './GridContainer';
 import ProjectShowPage from './ProjectShowPage';
 
