@@ -1,7 +1,10 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 10% auto auto auto auto auto auto 10%;
-  grid-row-gap: 80px;
+  grid-template-columns: 19% auto auto auto auto auto auto 19%;
+  grid-row-gap: 60px;
+  grid-column-gap: 65px;
+  grid-template-rows: 130px; /* top row is 100px in height */
+  grid-auto-rows: 100px;
 
 }
 
@@ -14,10 +17,18 @@
 }
 
 .grid-sidebar {
-  grid-column: 2 / 8;
+  grid-row-start: span 10;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 1px;
+}
+
+.navBar {
+  grid-column-start: span 8;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  text-align: center;
 }
 
 #main {

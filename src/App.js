@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
 import background from './background2.jpg';
-import Navbar from './Navbar';
-import Test from './Test';
+import GridContainer from './GridContainer';
 
 var styles = {
   backgroundImage: `url(${background})`,
@@ -17,7 +16,7 @@ class App extends React.Component {
   render() {
     return (
     <div id="main" style={styles}> 
-    <Test> </Test>
+    <GridContainer> </GridContainer>
     </div>)
   }
 }
