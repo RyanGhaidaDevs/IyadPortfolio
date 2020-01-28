@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 16% auto auto auto auto auto auto 16%;
-  grid-row-gap: 60px;
+  grid-row-gap: 90px;
   grid-column-gap: 65px;
   grid-template-rows: 130px; 
   grid-auto-rows: 80px;
