@@ -4,14 +4,7 @@ import background from './background2.jpg';
 import GridContainer from './GridContainer';
 import ProjectShowPage from './ProjectShowPage';
 
-// var styles = {
-//   backgroundImage: `url(${background})`,
-//   backgroundSize: 'contain',
-//   backgroundRepeat: 'no-repeat',
-//   backgroundPosition: 'center',
-//   backgroundAttachment: 'scroll'
 
-// };
 
 class App extends React.Component {
   constructor(){
