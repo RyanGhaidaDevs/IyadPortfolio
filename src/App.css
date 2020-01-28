@@ -31,6 +31,14 @@
   text-align: center;
 }
 
+.showPage{
+  text-align: center;
+}
+
+.showPageChild{
+  display: inline-block;
+}
+
 #main {
   height: 2000px;
 } 
