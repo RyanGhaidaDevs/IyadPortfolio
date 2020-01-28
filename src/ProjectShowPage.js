@@ -21,8 +21,9 @@ class ProjectShowPage extends React.Component {
   
   render() {
     return (
-    <div id="showPage" > 
-      <h1>  test </h1> 
+    <div id="showPage"> 
+      <h1> Project Title </h1> 
+      <button onClick={()=> this.props.handleBack()}>  back </button> 
     </div>)
   }
 }

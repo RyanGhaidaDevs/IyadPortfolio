@@ -4,14 +4,14 @@ import background from './background2.jpg';
 import GridContainer from './GridContainer';
 import ProjectShowPage from './ProjectShowPage';
 
-var styles = {
-  backgroundImage: `url(${background})`,
-  backgroundSize: 'contain',
-  backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'center',
-  backgroundAttachment: 'scroll'
+// var styles = {
+//   backgroundImage: `url(${background})`,
+//   backgroundSize: 'contain',
+//   backgroundRepeat: 'no-repeat',
+//   backgroundPosition: 'center',
+//   backgroundAttachment: 'scroll'
 
-};
+// };
 
 class App extends React.Component {
   constructor(){
@@ -21,19 +21,28 @@ class App extends React.Component {
       project: false 
     }
     this.handleSelect = this.handleSelect.bind(this)
+    this.handleBack = this.handleBack.bind(this)
 
   }
 
   handleSelect(id){
-    console.log(id)
+    this.setState({
+      project: true
+    }, ()=>console.log(this.state))
   } 
+
+  handleBack(){
+    this.setState({
+      project: false 
+    })
+  }
 
 
 
   render() {
     return (
-    <div id="main" style={styles}> 
-    {this.state.ptoject ? <ProjectShowPage handleSelect={this.handleSelect} > </ProjectShowPage> : <GridContainer> </GridContainer>}
+    <div > 
+    {this.state.project  ?  <ProjectShowPage handleBack={this.handleBack}> </ProjectShowPage>  : <GridContainer handleSelect={this.handleSelect}> </GridContainer>}
     </div>)
   }
 }
